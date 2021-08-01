@@ -1,5 +1,14 @@
 *{box-sizing: border-box;}
 
+#body
+{
+    margin: 100px;
+    
+}
 
+.btn
+{
+    margin-right: 5px;
+}
 
 
