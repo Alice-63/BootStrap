@@ -11,8 +11,3 @@
 .x{
 flex-wrap: wrap;
 }
-.jumbotron
-{
-    background-image: url(1.png);
-    background-size: cover;
-}
