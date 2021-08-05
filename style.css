@@ -11,3 +11,7 @@
 .x{
 flex-wrap: wrap;
 }
+
+nav{
+    color: blueviolet;
+}
