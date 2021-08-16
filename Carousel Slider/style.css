@@ -1,17 +1,4 @@
 *{box-sizing: border-box;}
 
-#body
-{
-    margin: 100px;
-    
-}
 
 
-
-.x{
-flex-wrap: wrap;
-}
-
-nav{
-    color: blueviolet;
-}
