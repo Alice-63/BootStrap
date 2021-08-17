@@ -1,7 +1,4 @@
 
 $(function(){
-    $("#slider1").carousel({
-        interval:2000,
-        
-    })
+    $("#myModal2").modal("show")
 })
