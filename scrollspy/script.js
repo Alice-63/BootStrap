@@ -1,4 +1,15 @@
+var box=document.getElementById("box")
 
-$(function(){
-    $("#myModal2").modal("show")
-})
+
+
+function getAll(){
+    fetch("https://jsonplaceholder.typicode.com/posts")
+    .then(response=>{
+        return response.json()
+    })
+    .then(data=>{
+        console.log(data)
+    })
+   
+
+}
