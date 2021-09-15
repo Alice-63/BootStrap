@@ -8,7 +8,8 @@ function getAll(){
         return response.json()
     })
     .then(data=>{
-        console.log(data)
+        for(let i=0 ; i<data.length; i++)
+        box.innerHTML+="ID: "+data[i].id+"User ID: "+data[i].userId+"<br>"+"Title: "+data[i].title+"<br>"+"Body: "+data[i].body+"<br>"
     })
    
 
