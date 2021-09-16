@@ -5,11 +5,15 @@ const p=new Promise(function(success,error){
 let x=0;
     if(x==0)
     {
-        success()
-        console.log(p)
+        success(x)
+     
     }
     else{
         error()
-        console.log("error!")
+     
     }
+})
+
+p.then(function(data){
+    console.log(data)
 })
