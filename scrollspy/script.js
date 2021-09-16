@@ -1,16 +1,15 @@
-var box=document.getElementById("box")
 
 
+const p=new Promise(function(success,error){
 
-function getAll(){
-    fetch("https://jsonplaceholder.typicode.com/posts")
-    .then(response=>{
-        return response.json()
-    })
-    .then(data=>{
-        for(let i=0 ; i<data.length; i++)
-        box.innerHTML+="ID: "+data[i].id+"User ID: "+data[i].userId+"<br>"+"Title: "+data[i].title+"<br>"+"Body: "+data[i].body+"<br>"
-    })
-   
-
-}
+let x=0;
+    if(x==0)
+    {
+        success()
+        console.log(p)
+    }
+    else{
+        error()
+        console.log("error!")
+    }
+})
