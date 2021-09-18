@@ -1,8 +1,13 @@
 
 
-fetch(
-"https://www.google.com"
-).then(function(data){
-   return data.json()
-}).then(json)
-console.log(json)
+
+const p=new Promise(function(success,error){
+    if(x=3)
+    {
+        error()
+    }
+}).then(function(){
+    console.log("Basariili")
+},function(){
+    console.log("hata")
+})
