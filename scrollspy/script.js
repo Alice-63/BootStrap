@@ -4,10 +4,10 @@
 const p=new Promise(function(success,error){
     if(x=3)
     {
-        error()
+        error(x)
     }
 }).then(function(){
     console.log("Basariili")
-},function(){
-    console.log("hata")
+},function(data){
+    
 })
