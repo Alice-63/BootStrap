@@ -6,8 +6,6 @@ async function hello(){
 
 
  
-    let link=URL.createObjectURL(results);
-    console.log(link)
     
 }
 
