@@ -9,11 +9,6 @@ async function hello(){
 hello()
 
 function hello2 (){
-    fetch("https://jsonplaceholder.typicode.com/todos/1").then(function(res){
-        return res.json()
-    }).then(function(data){
-        console.log(data)
-    })
-}
+    fetch("https://jsonplaceholder.typicode.com/todos/1").then(res=> res.json()).then((data)=>{console.log(data)})}
 
 hello2()
