@@ -1,10 +1,14 @@
 
 async function hello(){
 
-    let response= await fetch("/mona_lisa.jpg");
+    let response= await fetch("http://localhost/test.php");
     let results= await response.blob();
-    console.log(results)
+
+
+ 
+    let link=URL.createObjectURL(results);
+    console.log(link)
+    
 }
 
 hello()
-
