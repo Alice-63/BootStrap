@@ -10,7 +10,28 @@
 <body>
 
 
-  <script src="script.js" name="modules"></script>
+  
+  <div id="app">
+    <p>{{number}}</p>
+    <button @click="number++">Click</button>
+  </div>
+<script >
+
+const app =new Vue({
+  el:"#app",
+  data:{
+    number:0
+  }
+})
+
+
+
+</script>
+  <script src="script.js" >
+
+
+
+  </script>
   <script src="app.js" name="modules"></script>
 </body>
 </html>
