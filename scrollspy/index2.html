@@ -13,14 +13,19 @@
   
   <div id="app">
     <p>{{number}}</p>
-    <button @click="number++">Click</button>
+    <button @click="plus">Click</button>
   </div>
 <script >
 
 const app =new Vue({
   el:"#app",
   data:{
-    number:0
+    number:1
+  },
+  methods:{
+    plus(){
+       this.number=this.number*2
+    }
   }
 })
 
