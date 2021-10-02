@@ -1,8 +1,8 @@
-
+import app from './app'
 async function hello(){
 
-    let response= await fetch("http://localhost/test.php");
-    let results= await response.json();
+    let response= await fetch("./app.js");
+    let results= await response.text();
 
 
  
@@ -12,12 +12,14 @@ async function hello(){
 hello()
 
 function test(){
-    fetch("http://localhost.test.php")
-    .then(response => {response.json()})
-    .then(data=> console.log(data)
-  }
+    fetch("./app.js")
+    .then(response => response.json())
+    .then(data=> console.log(data))
+}
+    
+  
   
   async function test2(){
-    let response= await fetch("url")
+    let response= await fetch("./app.js")
       let result= await response
   }
